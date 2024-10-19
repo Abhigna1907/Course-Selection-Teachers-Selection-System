@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Selection & Teacher Assignment System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Course Selection & Teacher Assignment System</h1>
+    </header>
+
+    <div class="container">
+
+        <section class="student-section">
+            <h2>Select Courses</h2>
+            <p>Select 4 theory courses and 2 lab courses per semester</p>
+
+            <div class="course-selection">
+                <label for="theory-course-1">Theory Course 1:</label>
+                <select id="theory-course-1">
+                    <option value="">Select Course</option>
+                    <option value="1">Data Structures</option>
+                    <option value="2">Discrete Mathematics</option>
+                </select>
+
+                <label for="teacher-1">Select Teacher:</label>
+                <select id="teacher-1">
+                    <option value="">Select Teacher</option>
+                    <option value="1">Mr.Ravi</option>
+                    <option value="2">Mr.Hari</option>
+                </select>
+            </div>
+
+            <div class="course-selection">
+                <label for="theory-course-2">Theory Course 2:</label>
+                <select id="theory-course-2">
+                    <option value="">Select Course</option>
+                    <option value="1">Computer Networks</option>
+                    <option value="2">Operating Systems</option>
+                </select>
+
+                <label for="teacher-2">Select Teacher:</label>
+                <select id="teacher-2">
+                    <option value="">Select Teacher</option>
+                    <option value="1">Dr.Sunil</option>
+                    <option value="2">Mrs.Sucharitha</option>
+                </select>
+            </div>
+
+            <div class="course-selection">
+                <label for="theory-course-3">Theory Course 3:</label>
+                <select id="theory-course-3">
+                    <option value="">Select Course</option>
+                    <option value="1">Database Management System</option>
+                    <option value="2">Formal languages & Automata Theory</option>
+                </select>
+
+                <label for="teacher-3">Select Teacher:</label>
+                <select id="teacher-3">
+                    <option value="">Select Teacher</option>
+                    <option value="1">Ms.Karishma</option>
+                    <option value="2">Dr.Rajakumar</option>
+                </select>
+            </div>
+        
+        
+            <div class="course-selection">
+                <label for="theory-course-4">Theory Course 4:</label>
+                <select id="theory-course-4">
+                    <option value="">Select Course</option>
+                    <option value="1">Full Stack Application Development</option>
+                    <option value="2">Software Engineering</option>
+                </select>
+
+                <label for="teacher-4">Select Teacher:</label>
+                <select id="teacher-4">
+                    <option value="">Select Teacher</option>
+                    <option value="1">Mr.Naveen</option>
+                    <option value="2">Mr.Ayyavariah</option>
+                </select>
+            </div>
+            
+
+            <div class="course-selection">
+                <label for="theory-course-3">Lab Course 1:</label>
+                <select id="theory-course-3">
+                    <option value="">Select Course</option>
+                    <option value="1">Database Management System</option>
+                    <option value="2">Java Programming</option>
+                </select>
+
+                <label for="teacher-3">Select Teacher:</label>
+                <select id="teacher-3">
+                    <option value="">Select Teacher</option>
+                    <option value="1">Ms.Karishma</option>
+                    <option value="2">Dr.Sravan</option>
+                </select>
+            </div>
+
+        
+            <div class="course-selection">
+                <label for="theory-course-3">Lab Course 2:</label>
+                <select id="theory-course-3">
+                    <option value="">Select Course</option>
+                    <option value="1">Chemistry</option>
+                    <option value="2">Physics</option>
+                </select>
+
+                <label for="teacher-3">Select Teacher:</label>
+                <select id="teacher-3">
+                    <option value="">Select Teacher</option>
+                    <option value="1">Mr.Rajashekhar</option>
+                    <option value="2">Dr.Jamalaiah</option>
+                </select>
+            </div>
+            <button id="submit-courses">Submit Courses</button>
+        </section>
+
+        <section class="teacher-section">
+            <h2>Teacher Profiles</h2>
+            <div class="teacher-profile" id="profile-1">
+                <h3>Dr.Anuhya</h3>
+                <p>Rating: 4.7/5</p>
+                <p>Research: AI and Machine Learning</p>
+                <p>Patents: 2</p>
+                <p>Academic Background: PhD in Computer Science</p>
+                <button onclick="giveFeedback(1)">Submit Feedback</button>
+            </div>
+
+            <div class="teacher-profile" id="profile-2">
+                <h3>Dr.Sahasra</h3>
+                <p>Rating: 4.5/5</p>
+                <p>Research: Cybersecurity</p>
+                <p>Patents: 3</p>
+                <p>Academic Background: PhD in Information Security</p>
+                <button onclick="giveFeedback(2)">Submit Feedback</button>
+            </div>
+
+            <div class="teacher-profile" id="profile-3">
+                <h3>Dr.Ronith</h3>
+                <p>Rating: 4.5/5</p>
+                <p>Research: Cybersecurity</p>
+                <p>Patents: 3</p>
+                <p>Academic Background: PhD in Information Security</p>
+                <button onclick="giveFeedback(3)">Submit Feedback</button>
+            </div>
+
+            <div class="teacher-profile" id="profile-4">
+                <h3>Dr.Sai</h3>
+                <p>Rating: 4.5/5</p>
+                <p>Research: Cybersecurity</p>
+                <p>Patents: 3</p>
+                <p>Academic Background: PhD in Information Security</p>
+                <button onclick="giveFeedback(4)">Submit Feedback</button>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="pgms.js"></script>
+
+</body>
+</html>
